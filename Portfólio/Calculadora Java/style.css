@@ -1,0 +1,133 @@
+    .calculadora {
+        width: 290px;
+        height: 460px;
+        margin-top: 12%;
+        margin-left: 40%;
+        background-color: rgba(0, 0, 0, 0.404);
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
+    #visor {
+        width: 290px;
+        height: 100px;
+        float: left;
+        color: white;
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+    }
+    
+    .botoes {
+        width: 53px;
+        height: 53px;
+        float: left;
+        background-color: #252525;
+        border: 1px solid gray;
+        color: white;
+        border-radius: 50%;
+        font-size: 25px;
+        margin-left: 5%;
+        margin-top: 5%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botoes-funcoes {
+        width: 53px;
+        height: 53px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #252525;
+        border: 1px solid gray;
+        color: green;
+        border-radius: 50%;
+        font-size: 25px;
+        margin-left: 5%;
+        margin-top: 5%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .botao-igual {
+        width: 53px;
+        height: 53px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        border: 1px solid green;
+        color: white;
+        border-radius: 50%;
+        font-size: 25px;
+        margin-left: 5%;
+        margin-top: 5%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .botao-c {
+        width: 53px;
+        height: 53px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #252525;
+        border: 1px solid gray;
+        color: orangered;
+        border-radius: 50%;
+        font-size: 25px;
+        margin-left: 5%;
+        margin-top: 5%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    div.botoes:hover {
+        background-color: gray;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    div.botoes-funcoes:hover {
+        background-color: gray;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    div.botao-igual:hover {
+        background-color: rgb(7, 80, 7);
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    div.botao-c:hover {
+        background-color: gray;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        margin: 100px;
+        background-color: white;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    body {
+        background-image: url('https://cdn.dicionariopopular.com/imagens/nazareconfusamatematica.gif');
+        background-size: 50%;
+    }

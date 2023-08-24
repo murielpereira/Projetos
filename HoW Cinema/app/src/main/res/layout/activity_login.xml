@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/email"
+        android:imeOptions="actionDone"
+        android:textColor="@color/textofundo"
+        android:textColorHint="@color/textofundo"
+        android:background="@drawable/caixabranca"
+        android:paddingStart="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/senha_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/senha"
+        android:imeOptions="actionDone"
+        android:textColor="@color/textofundo"
+        android:textColorHint="@color/textofundo"
+        android:background="@drawable/caixabranca"
+        android:paddingStart="20dp"
+        android:inputType="textPassword" />
+
+    <RadioButton
+        android:id="@+id/button_lembrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:text="lembre-me" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/caixabranca"
+        android:onClick="chamar_main"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="ou" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="Login com suas Redes Sociais" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button_facebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="85dp"
+            android:background="@drawable/circulobranco"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button_google"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/google"
+            android:text="" />
+
+
+
+        <Button
+            android:id="@+id/button_twitter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/circulobranco"
+            android:text="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/button_termos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="@string/termos"
+        android:onClick="chamar_termos"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

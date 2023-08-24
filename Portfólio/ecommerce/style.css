@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+* { 
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+ }
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 10%;
+}
+
+.top-header{
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-color: #F4F4F4;
+}
+
+.logo{
+  cursor: pointer;
+  max-height: 50px;
+}
+
+.searchspace{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-height: 10rem;
+}
+
+.user_logo{
+  cursor: pointer;
+  max-height: 50px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3rem;
+  margin: 0% 13% 0%;
+}
+
+.navbar a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar a:hover{
+  color: rgb(0, 4, 255);
+  transform: scale(1.03);
+}
+
+/*tela de login*/
+
+.login_box{
+  background-color: aqua;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teste{
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*tela de login*/
+
+
+.options-bar{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: space-evenly;
+  align-items: center;
+  position: center;
+  text-align: center;
+  background-color: #4fa550;
+  width: 25rem;
+}
+
+.options-bar a{
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.options-bar a:hover{
+  color: red;
+}
+
+.options-item img{
+  justify-content: center;
+  align-items: center;
+  max-height: 25px;
+}
+
+.options-item a{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* INICIO SEARCHBAR*/
+
+.wrapper {
+  width: 100%;
+  max-width: 31.25rem;
+  margin: 6rem auto;
+}
+
+.label {
+  font-size: .625rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: +1.3px;
+  margin-bottom: 1rem;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+/*FIM SEARCHBAR*/
+
+/* inicio banner rotativo*/
+
+.banner-container{
+  height: 490px;
+  width: 99vw;
+  background-color: #4fa550;
+}
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 1920px;
+}
+
+.banner-img-ativo{
+  opacity: 1;
+}
+
+
+/* fim banner rotativo*/
+
+/* inicio mini banner*/
+
+.mini-banner-container{
+  height: 22rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0% 13% 0%;
+}
+
+.mini-banner{
+  width: 23%;
+  height: 19rem;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: transform .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.mini-banner:hover{
+  transform: scale(1.03);
+  background-color: red;
+}
+
+/* fim mini banner*/
+
+/* inicio produtos*/
+
+.category-name{
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto-container{
+  height: auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0% 13% 0%;
+}
+
+.produto-banner{
+  width: 19%;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: transform .2s;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.produto-banner:hover{
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.foto-produto{
+  width: 100%;
+  height: 14rem;
+  background-color: black;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.foto-produto img{
+  width: 100%;
+}
+
+.botao-comprar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5cd15e;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  height: 2.4rem;
+  transition: transform .2s;
+  text-decoration: none;
+}
+
+.botao-comprar:hover{
+  background-color: #4fa550;
+  transform: scale(1.03);
+  color: white;
+}
+
+.nome-produto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0px 5px 0px;
+}
+
+/*
+.descricao-resumida::-webkit-scrollbar {
+  display: none;
+}
+*/
+
+.valor{
+  height: 6rem;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px){
+  .mini-banner-container{
+    background-color: aqua;
+  }
+}
+
+
+/* Inicio Estrelas Avaliação */
+
+fieldset, label { margin: 0; padding: 0; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+/* Fim Estrelas Avaliação */
+
+
+
+
+/* teste*/

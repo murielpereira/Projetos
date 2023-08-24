@@ -1,0 +1,100 @@
+<!-- 
+    <?php
+
+    if(isset($_POST['submit']))
+    {
+       // print_r('Descrição: ' . $_POST['descricao']);
+       // print_r('<br>');
+       // print_r('Valor do Aluguel: ' . $_POST['valor']);
+       // print_r('<br>');
+       // print_r('Cidade: ' . $_POST['cidade']);
+       // print_r('<br>');
+       // print_r('Estado: ' . $_POST['estado']);
+       // print_r('<br>');
+       // print_r('Tipo: ' . $_POST['Tipo']);
+
+       include_once('config.php');
+
+        $descricao = $_POST['descricao'];
+        $valor = $_POST['valor'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
+        $tipo = $_POST['Tipo'];
+
+        $result = mysqli_query($conexao, "INSERT INTO imoveis(descricao_imovel,tipo_imovel,valor_aluguel,cidade_imovel,estado_imovel) 
+        VALUES ($descricao,$tipo,$valor,$cidade,$estado)");
+
+    }
+
+?>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+</head>
+<body>
+
+    <div>
+        <form action="config.js" method="POST">
+            <fieldset>
+                <legend>Cadastro de Imóveis</legend>
+                <br>
+                <div class="input">
+                    <input type="text" name="descricao" id="descricao" class="input_descricao" required>
+                    <label for="descricao">Descrição do Imóvel</label>
+                </div>
+
+                <div class="input">
+                    <input type="number" name="valor" id="valor" class="input_valor" required>
+                    <label for="valor">Valor do Aluguel</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="cidade" id="cidade" class="input_cidade" required>
+                    <label for="cidade">Cidade do Imóvel</label>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="estado" id="estado" class="input_estado" required>
+                    <label for="estado">Estado do Imóvel</label>
+                </div>
+
+                <p>Tipo Imóvel</p>
+                <input type="radio" id="casa" name="Tipo" value="Casa" required>
+                <label for="Casa">Casa</label>
+
+                <input type="radio" id="apartamento" name="Tipo" value="Apartamento" required>
+                <label for="Apartamento">Apartamento</label>
+
+                <input type="radio" id="sala_comercial" name="Tipo" value="Sala Comercial" required>
+                <label for="Sala Comercial">Sala Comercial</label>
+
+                <input type="radio" id="sitio" name="Tipo" value="Sitio" required>
+                <label for="Sitio">Sitio</label>
+
+                <input type="submit" name="submit" id="submit">
+
+
+            </fieldset>
+        </form>
+    </div>
+
+    
+    <div>
+        <table>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Descrição</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>Valor</th>
+        </table>
+
+    </div>
+</body>
+</html>

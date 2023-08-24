@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Cinema Finais Felizes</string>
+    <string name="MovieTheater">MovieTheater</string>
+    <string name="cinema_seat">cinema_seat</string>
+    <string name="movie">Movie</string>
+    <string name="movietheater">MovieTheater</string>
+    <string name="Assentos">Assentos</string>
+    <string name="sessoes">Sessões</string>
+    <string name="Filmes">Filmes</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="manager_movies">Gerenciar filmes</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="listar_filmes">Listar Filmes</string>
+    <string name="Edit_movie">Editar FIlme</string>
+    <string name="category">Categoria</string>
+    <string name="session">Sessão</string>
+    <string name="name">Nome do Filme</string>
+    <string name="add_movie"></string>
+    <string name="Salvar">Salvar</string>
+    <string name="list_movies">Listar Filmes</string>
+    <string name="lista_poltrona">Poltrona disponível</string>
+    <string name="listar_poltrona">listar poltrona</string>
+    <string name="gerenciar_poltronas">gerenciar poltronas</string>
+    <string name="disponivel">Disponível</string>
+    <string name="excluir">Excluir</string>
+    <string name="Editar">Editar</string>
+    <string name="excluir_poltrona">Você deseja excluir a locação dessa poltrona?</string>
+    <string name="Edit_client">Editar Cliente</string>
+    <string name="name_client">NOme do cliente</string>
+    <string name="age_client">Idade do cliente</string>
+    <string name="id_poltrona">Poltrona do cliente</string>
+    <string name="listar_cliente">Listar clientes</string>
+    <string name="adicionar_cliente">Adicionar cliente</string>
+    <string name="email">e-mail</string>
+    <string name="senha">senha</string>
+    <string name="termos">Termos e Licenças de Usúario</string>
+</resources>
